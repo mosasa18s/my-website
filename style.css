@@ -675,13 +675,15 @@ span{
 		flex-direction: column-reverse;
 		margin: 5rem 4rem;
 	}
-
+	.home-content h3{
+		font-size: 2.6rem;
+	}
 	.text-animation {
 		font-size: 28px; /* Reduce font size for smaller screens */
 		max-width: 90%; /* Prevent text from overflowing */
 	  }
 	
-	  .text-animation span {
+	.text-animation span {
 		display: inline-block; /* Ensures text stays on one line */
 	  }
 	.home-content h1{
