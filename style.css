@@ -232,6 +232,8 @@ span{
 	min-width: 280px;
 	white-space: nowrap;
 	overflow: hidden;
+	max-width: 100%;
+	width: 100%;
 }
 
 .text-animation span{
