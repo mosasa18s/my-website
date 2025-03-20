@@ -234,6 +234,8 @@ span{
 	overflow: hidden;
 	max-width: 100%;
 	width: 100%;
+	flex: 1 1 auto;
+	margin: 0 10px;
 }
 
 .text-animation span{
