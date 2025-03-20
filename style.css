@@ -230,6 +230,8 @@ span{
 	font-size: 34px;
 	font-weight: 600;
 	min-width: 280px;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .text-animation span{
@@ -691,6 +693,21 @@ span{
 	
 }
 
+@media (max-width: 768px) {
+	.text-animation {
+	  font-size: 28px; /* Reduce font size for smaller screens */
+	}
+  
+	.text-animation span {
+	  display: inline-block; /* Ensures text stays on one line */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.text-animation {
+	  font-size: 24px; /* Further reduce font size for very small screens */
+	}
+  }
 
 
 
