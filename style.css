@@ -27,7 +27,7 @@ body {
 	color: var(--text-color);
 	padding-top: 8rem; 
 	overflow-x: hidden;
-	width: 100%;
+	width: 100vw;
 }
 
 .header {
@@ -109,6 +109,7 @@ body {
 section{
 	min-height: 100vh;
 	padding: 10rem 12% 10rem;
+	width:100%;
 }
 
 .home{
