@@ -27,6 +27,7 @@ body {
 	color: var(--text-color);
 	padding-top: 8rem; 
 	overflow-x: hidden;
+	width: 100%;
 }
 
 .header {
