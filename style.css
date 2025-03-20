@@ -124,14 +124,13 @@ section{
 	padding:0 5%;
 }
 .home-content{
-	display: flex;
-	flex-direction: column;
-	align-items: baseline;
-	text-align: left;
-	justify-content: center;
-	margin-top: 3rem;
-	width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
 }
 
 span{
@@ -636,6 +635,9 @@ span{
     .home-content {
         width: 100%;  /* Full width on smaller screens */
     }
+	.home-img img {
+        width: 56vw; 
+    }
 
 	.timeline-items::before{
 		left: 7px;
@@ -692,6 +694,7 @@ span{
 	.home{
 		flex-direction: column-reverse;
 		margin: 5rem 3%;
+		padding: 0 4%;
 	}
 	.home-content h3{
 		font-size: 2.6rem;
