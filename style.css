@@ -242,6 +242,7 @@ span{
 	flex: 1 1 auto;
 	margin: 0 10px;
 	display: inline-block;
+	text-overflow: ellipsis;
 }
 
 .text-animation span{
