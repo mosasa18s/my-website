@@ -114,6 +114,10 @@ section{
 	justify-content: center;
 	align-items: center;
 	gap: 15rem;
+	width:100%;
+	overflow: hidden;
+	position: relative;
+	max-width: 100vw;
 }
 
 .home-content{
@@ -123,6 +127,7 @@ section{
 	text-align: left;
 	justify-content: center;
 	margin-top: 3rem;
+
 }
 
 span{
