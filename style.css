@@ -681,11 +681,11 @@ span{
 	.text-animation {
 		font-size: 28px; /* Reduce font size for smaller screens */
 		max-width: 90%; /* Prevent text from overflowing */
-	  }
+	}
 	
 	.text-animation span {
 		display: inline-block; /* Ensures text stays on one line */
-	  }
+	}
 	.home-content h1{
 		font-size: 8rem;
 		margin-top: 3rem;
