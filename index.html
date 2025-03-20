@@ -162,26 +162,39 @@
 		</form>
 	  </section>
 	  
-	  <!-- Include EmailJS SDK -->
-	  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-	  <script type="text/javascript">
-		// Initialize EmailJS with your user ID (replace YOUR_USER_ID)
-		(function(){
-			//"YOUR_USER_ID"
-		  emailjs.init("4cy5lj8RZebghNE5M");
-		})();
-	  
-		// Listen for form submission and send email
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-		  event.preventDefault(); // Prevent default form submission
-			//'YOUr_SERVICE_ID', 'YOUR_TEMPLATE_ID', 
-		  emailjs.sendForm('service_vs0nhho', 'template_8ua4m0n', this)
-			.then(function() {
-				alert('Message sent successfully!');
-			}, function(error) {
-				alert('Failed to send message, please try again.');
-			});
-		});
+<!-- Include EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  // Initialize EmailJS with your User ID (replace with your actual user ID)
+  (function() {
+    emailjs.init("4cy5lj8RZebghNE5M");
+  })();
+
+  // Listen for form submission and send two emails:
+  // 1. Confirmation email to the user (person who filled out the form)
+  // 2. Notification email to yourself with the form details
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the default way
+
+    // Send confirmation email to the user
+	//('service ID', 'template ID')
+    emailjs.sendForm('service_vs0nhho', 'template_8ua4m0n', this)
+      .then(function() {
+        console.log('Confirmation email sent to user.');
+      }, function(error) {
+        console.error('Failed to send confirmation email:', error);
+      });
+
+    // Send the form message to yourself ('service ID', 'template ID')
+    emailjs.sendForm('service_vs0nhho', 'template_1xv3xlo', this)
+      .then(function() {
+        alert('Message sent successfully! I will receive your message shortly.');
+      }, function(error) {
+        alert('Failed to send message to myself, please try again.');
+      });
+  });
+</script>
+
 	  </script>
 	  
 
