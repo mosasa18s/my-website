@@ -236,10 +236,12 @@ span{
 	width: 100%;
 	flex: 1 1 auto;
 	margin: 0 10px;
+	display: block;
 }
 
 .text-animation span{
 	position: relative;
+	display: inline-block;
 }
 
 .text-animation span::before{
