@@ -675,9 +675,15 @@ span{
 		flex-direction: column-reverse;
 		margin: 5rem 4rem;
 	}
-	.home-content h3{
-		font-size: 2.6rem;
-	}
+
+	.text-animation {
+		font-size: 28px; /* Reduce font size for smaller screens */
+		max-width: 90%; /* Prevent text from overflowing */
+	  }
+	
+	  .text-animation span {
+		display: inline-block; /* Ensures text stays on one line */
+	  }
 	.home-content h1{
 		font-size: 8rem;
 		margin-top: 3rem;
@@ -698,24 +704,6 @@ span{
 
 	
 }
-
-@media (max-width: 768px) {
-	.text-animation {
-	  font-size: 28px; /* Reduce font size for smaller screens */
-	  max-width: 90%; /* Prevent text from overflowing */
-	}
-  
-	.text-animation span {
-	  display: inline-block; /* Ensures text stays on one line */
-	}
-  }
-  
-  @media (max-width: 480px) {
-	.text-animation {
-	  font-size: 24px; /* Further reduce font size for very small screens */
-	  max-width: 80%; /* Ensure text fits within container */
-	}
-  }
 
 
 
